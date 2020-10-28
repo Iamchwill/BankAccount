@@ -16,5 +16,7 @@ public class Tester {
     System.out.println(a2.withdraw(50));
     System.out.println(a2.deposit(100));
     System.out.println(a2.getBalance());
+    System.out.println(a1.toString());
+    System.out.println(a2.toString());
   }
 }
