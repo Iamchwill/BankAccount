@@ -17,6 +17,13 @@ public class Tester {
     System.out.println(a2.deposit(100));
     System.out.println(a2.getBalance());
     System.out.println(a1.toString());
+    System.out.println(a1.toString());
     System.out.println(a2.toString());
+    System.out.println(a1.transferTo(a2, 100, "01000"));
+    System.out.println(a2);
+    System.out.println(a1);
+    System.out.println(a1.transferTo(a2, 250, "00000"));
+    System.out.println(a2);
+    System.out.println(a1);
   }
 }

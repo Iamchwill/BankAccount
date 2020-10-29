@@ -42,6 +42,18 @@ public class BankAccount {
     }
 
   public String toString() {
-    return accountID + "\t" + balance;
+    return "#" + accountID + "\t $"+ balance;
+  }
+
+  private boolean authenticate(String pass) {
+    return password.equals(pass);
+  }
+
+  public boolean transferTo(BankAccount other, double amount, String pass) {
+    if (authenticate(pass) && withdraw(amount)) {
+       other.deposit(amount);
+       return true;
+    }
+    return false;
   }
 }
